@@ -1,3 +1,36 @@
+alert('The results are in! Right-click on the screen and select \'console\' to view your financial analysis\.\nContact us for further details\.');
+console.log('%cFinancial Analysis', 'color: blue; font-size: 20px');
+
+
+//Find out the total number of months - DO THESE NEED SPLITTING OUT FROM FINANCES? SURELY I DON'T HAVE TO INDIVIDUALLY LIST THEM ALL?!
+const totalMonths = [finances];
+let length = totalMonths.length
+console.log (length) 
+
+
+//Find out the total sum 
+var totalSum = [finances]
+//Reduce method? But makes you list all the numbers 
+//useful article - https://www.w3docs.com/snippets/javascript/how-to-find-the-sum-of-an-array-of-numbers.html
+//useful article - https://www.slingacademy.com/article/javascript-ways-to-calculate-the-sum-of-an-array/?utm_content=cmp-true #
+//useful article - https://www.educative.io/answers/how-to-get-the-sum-of-an-array-in-javascript
+
+//Find out the greatest increase in profits 
+var numbers = [finances];
+
+var maxValue = Math.max(...numbers);
+console.log(maxValue);
+    
+
+//Find out the greatest decrease in profits
+var minValue = Math.min(...numbers);
+console.log(minValue); 
+
+//Average change 
+(minValue) + (MaxValue) /2 
+
+
+//Should I split these out into months and money? 
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
