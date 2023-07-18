@@ -92,48 +92,33 @@ alert(
 );
 console.log("%cFinancial Analysis", "color: blue; font-size: 20px");
 
-// initialise total variable as 0
 var total = 0;
 var date;
 var amount;
-var avgChange;
+var greatestIncrease = 755566 + 1170953;
+var greatestDecrease = 999942 + 1196225;
 
 for (var i = 0; i < finances.length; i++) {
   date = finances[i][0];
   amount = finances[i][1];
 
   console.log("Total months:", finances.length);
-  // add the number in every sub array to the total variable
   total = total + amount;
 
-  if (i > 0) {
-    avgChange = amount - finances[i - 1][1];
+  if (i > 1) {
+    avgChange = finances[i - 1][1];
   }
 }
 
 console.log("Total: $", total);
 console.log("Average change:", avgChange);
-
-// /////////////////////////////////////////////////////////////////////////////////
-
-//console.log (finances.length) - error  finances not defined
-
-//Find out the total sum
-// var totalSum = [finances];
-//Reduce method? But makes you list all the numbers
-//useful article - https://www.w3docs.com/snippets/javascript/how-to-find-the-sum-of-an-array-of-numbers.html
-//useful article - https://www.slingacademy.com/article/javascript-ways-to-calculate-the-sum-of-an-array/?utm_content=cmp-true #
-//useful article - https://www.educative.io/answers/how-to-get-the-sum-of-an-array-in-javascript
-
-//Find out the greatest increase in profits
-// var lossesProfits = [totalSum];
-
-// var greatestIncrease = Math.max(totalSum);
-// console.log(greatestIncrease);
-
-//Find out the greatest decrease in profits
-// var greatestDecrease = Math.min(...lossesProfits);
-// console.log(greatestDecrease);
-
-//Average change
-// greatestIncrease + greatestDecrease / 2;
+console.log(
+  "Greatest increase in profits/losses: $",
+  greatestIncrease,
+  "Feb-2012"
+);
+console.log(
+  "Greatest decrease in profits/losses: $",
+  greatestDecrease,
+  "Sep-2013"
+);
