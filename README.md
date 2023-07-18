@@ -8,9 +8,10 @@ This included:
 * The greatest increase in profits (date and amount) over the entire period.
 * The greatest decrease in losses (date and amount) over the entire period.
 
-View the deployed application here: LINK 
+View the deployed application here: https://charlottebgh.github.io/console-finances/
 
-IMAGE 
+![image](https://github.com/CharlotteBGH/console-finances/assets/99615123/a518ba84-0641-4235-9a42-8d2743934662)
+
 
 ## Usage
 To view the console log, right-click, then select 'Inspect', then 'Console', where the financial information will be displayed. 
